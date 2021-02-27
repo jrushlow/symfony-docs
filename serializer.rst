@@ -43,8 +43,7 @@ you need it or it can be used in a controller::
 
 .. versionadded:: 5.3
 
-    A ``serialize`` filter was introduced in Symfony 5.3 that uses the Serializer
-component.
+    A ``serialize`` filter was introduced in Symfony 5.3 that uses the Serializer component.
 
 .. code-block:: twig
 
