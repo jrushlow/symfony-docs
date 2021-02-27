@@ -563,20 +563,23 @@ serialize
 
 .. code-block:: twig
 
-    {{ object|serialize(format = 'json') }}
+    {{ object|serialize(format = 'json', context = []) }}
 
 ``object``
-    **type**: ``object``
+    **type**: ``mixed``
 
 ``format`` *(optional)*
     **type**: ``string``
+
+``context`` *(optional)*
+    **type**: ``array``
 
 .. versionadded:: 5.3
 
     The ``serialize`` filter was introduced in Symfony 5.3.
 
-Accepts any object that can be serialized by Symfony's Serializer Component and
-returns the serialized object in the specified ``format``.
+Accepts any data that can be serialized by Symfony's Serializer Component and
+returns a serialized string in the specified ``format``.
 
 .. _reference-twig-tags:
 
